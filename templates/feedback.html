@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css"> 
+    <title>Feedback</title>
+</head>
+<body>
+    {% if 'username' in session %}
+    <div id="top-left">
+        <span class="logged-in" >Logged in as: {{ session['username'] }}</span>
+    </div>
+    <div id="top-right">
+        <a href="{{ url_for('logout') }}" class="button">Logout</a> 
+        <a href="{{ url_for('change_password_form') }}" class="button">Change Password</a>
+    </div>
+    {% endif %}
+
+    <form action="/feedback" method="POST">
+        <label for="feedback">Enter your feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+        <input style="font-family: stardew, monospace;"  class="button" type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

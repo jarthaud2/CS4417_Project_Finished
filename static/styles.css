@@ -1,0 +1,66 @@
+/* Define font face */
+@font-face {
+    font-family: stardew;
+    src: url('stardew.ttf') format('truetype');
+}
+
+/* Apply font to body */
+body {
+    font-family: stardew, monospace;
+    background-image: url('stardew.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the form */
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Apply font to buttons within the form */
+form button {
+    font-family: stardew, monospace;
+}
+
+#top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logged-in {
+    color: white; /* Set text color to white */
+}
+.button {
+    background-color: #7142bd; /* Green */
+    border: none; /* Remove the border */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form input[type="submit"] {
+    font-family: stardew, monospace;
+}
+input[type="submit"] {
+    font-family: stardew, monospace;
+}
